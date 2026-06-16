@@ -6,7 +6,7 @@ from models import *
 from utils import *
 from tasks import *
 from interfaces import *
-from distutils.util import strtobool
+from distutils.util import strtobool # type: ignore
 
 
 neuron_hyper_list = {

@@ -1,4 +1,25 @@
-# Code instructions
+# Environment Setup
+
+## Python version
+Python 3.11 or higher.
+
+## Install general dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+## Install the latest SpikingJelly from source
+
+```bash
+git clone https://github.com/fangwei123456/spikingjelly.git
+
+cd spikingjelly
+
+pip install .
+```
+
+# Code Instructions
 
 To run the complete training by different algorithms, please use the following command:
 
