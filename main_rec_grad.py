@@ -7,7 +7,7 @@ from models.base import BackpropBase
 from utils import *
 from tasks import *
 from interfaces import *
-from distutils.util import strtobool
+from distutils.util import strtobool # type: ignore
 import json
 import torch.distributed as dist            
 from torch.nn.parallel import DistributedDataParallel
@@ -324,7 +324,7 @@ def main():
 
     # if eval_t is None :
     trainer.rec_grad(
-        epoch,
+        epoch=args.epochs,
         save_dir="data/grad.npz",
         device=torch.device('cuda'),
         online_update=args.online_update,
